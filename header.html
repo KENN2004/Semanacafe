@@ -1,0 +1,48 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana Café</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<header class="site-header">
+  <div class="header-container">
+    <!-- Left: Logo -->
+    <div class="logo">
+      <img src="images/logo.png" alt="Semana Café Logo" />
+    </div>
+
+    <!-- Center: Nav Menu -->
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="animate__animated">Home</a></li>
+        <li><a href="about.html" class="animate__animated">About</a></li>
+        <li><a href="menus.html" class="animate__animated">Menus</a></li>
+        <li><a href="contact.html" class="animate__animated">Contact Us</a></li>
+    
+      </ul>
+    </nav>
+
+    <!-- Right: Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:info@semanacafe.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </div>
+</header>
+<script>
+  // Toggle mobile menu
+  function setupMenuToggle() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
